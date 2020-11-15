@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<!--this is to organize smoke or regression tests into suites to run them together -->
+<!--in order to run testNg.xml runner, we run it thru maven lifecycle commands : test  -->
+<suite name="Test suite">
+    <test name="Order Test">
+        <classes>
+            <class name="com.webOrders.tests.LoginTest"></class>
+            <class name="com.webOrders.tests.OrderTest"></class>
+        </classes>
+    </test>
+</suite>
+
